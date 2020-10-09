@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/41ed59a29024f1d258b293b9043e8f81?family=Revue);
 :root {
   /* CSS HEX */
   --linen: #f6ece0ff;
@@ -11,4 +12,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }

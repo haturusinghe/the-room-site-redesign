@@ -2,17 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="parallax.css" />
-    <link rel="stylesheet" href="hero.css" />
-    <link rel="stylesheet" href="sample.css" />
-    <link rel="stylesheet" href="scroll.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/parallax.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/title-card.css" />
+    <link rel="stylesheet" href="styles/scroll-icon.css" />
+    <link rel="stylesheet" href="nav.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>The Room | Official Website</title>
   </head>
   <body>
-    <div class="ParallaxVideo">
+    <div class="ParallaxVideo" id="sec-1">
       <div class="inner">
         <p>a film by TOMMY WIESEAU</p>
         <h1>The Room</h1>
@@ -26,12 +27,24 @@
       </a>
     </div>
 
-    <div class="hero-container" id="sec-2">
-      <div class="item1">Love</div>
-      <div class="item2">Friendship</div>
-      <div class="item3">Betrayal</div>
+    <div class="parallax banner" id="sec-2">
+      <h2>a great american story</h2>
+      <a href="#sec-3">
+        <div class="scroll-down"></div>
+      </a>
     </div>
 
-    <div class="parallax"></div>
+    <div class="hero-container" id="sec-3">
+      <div class="item1">
+        <h3>Love</h3>
+      </div>
+      <div class="item2">
+        <h3>Friendship</h3>
+        <a href="#sec-2">
+          <div class="scroll-down"></div>
+        </a>
+      </div>
+      <div class="item3"><h3>Betrayal</h3></div>
+    </div>
   </body>
 </html>

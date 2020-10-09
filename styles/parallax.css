@@ -1,22 +1,14 @@
-body,
-html {
-  height: 100%;
-}
 .parallax {
-  /* The image used */
-  background-image: url("img/bg-cover.jpg");
-
-  /* Full height */
+  position: relative;
+  background-image: url("../img/bg-cover-1.jpg");
   height: 100%;
 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
@@ -34,17 +26,18 @@ html {
   top: 0;
   z-index: -999;
 }
-/*
+
 .ParallaxVideo:before {
   content: "";
-  background: rgba(114, 45, 0, 0.35);
+  background: rgba(106, 98, 93, 0.35);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
-}*/
+}
+
 .ParallaxVideo:after {
   content: "";
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQYlWNgQID/MIZx5rX/WPhUVsRApKL/VFaEw434xQko+k9lRQwMDADYeETBkajnygAAAABJRU5ErkJggg==);
