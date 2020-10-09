@@ -1,0 +1,27 @@
+.grid {
+  padding: 0 50px 50px 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.span-col-3 {
+  grid-column: span 3 / auto;
+}
+.poster {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.grid img {
+  height: 80vh;
+}
+
+.grid p {
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  margin-right: 100px;
+  text-align: right;
+  color: aliceblue;
+  font-family: "Roboto", cursive;
+  font-size: 1.3em;
+}

@@ -18,6 +18,21 @@
   grid-area: item-3;
 }
 
+.banner-text {
+  position: absolute;
+  top: 100px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: capitalize;
+  /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAEklEQVQYlWNgoBL4T7GCoW8FAGEXBfvNSmHvAAAAAElFTkSuQmCC);
+  */
+  color: aliceblue;
+  font-family: "Yeseva One", cursive;
+  font-size: 5em;
+  letter-spacing: 5px;
+  background-color: #8b1c1aff;
+}
+
 .hero-container > div {
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.8);
