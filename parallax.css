@@ -47,7 +47,6 @@ html {
 .ParallaxVideo:after {
   content: "";
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQYlWNgQID/MIZx5rX/WPhUVsRApKL/VFaEw434xQko+k9lRQwMDADYeETBkajnygAAAABJRU5ErkJggg==);
-  background-size: 3px 3px;
   position: absolute;
   top: 0;
   left: 0;
