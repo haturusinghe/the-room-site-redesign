@@ -22,6 +22,10 @@
   border-left: transparent;
   animation: scroll-down 1s ease-in-out infinite;
 }
+
+.rotate {
+  transform: rotate(180deg);
+}
 .scroll-down::before {
   top: 30%;
   animation-delay: 0.3s;
