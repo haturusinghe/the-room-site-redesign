@@ -34,6 +34,7 @@ html {
   top: 0;
   z-index: -999;
 }
+/*
 .ParallaxVideo:before {
   content: "";
   background: rgba(114, 45, 0, 0.35);
@@ -43,7 +44,7 @@ html {
   width: 100%;
   height: 100%;
   z-index: 0;
-}
+}*/
 .ParallaxVideo:after {
   content: "";
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQYlWNgQID/MIZx5rX/WPhUVsRApKL/VFaEw434xQko+k9lRQwMDADYeETBkajnygAAAABJRU5ErkJggg==);
