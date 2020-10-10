@@ -3,9 +3,9 @@
   width: 30px;
   position: absolute;
   left: 50%;
+  cursor: pointer !important;
+  z-index: 5;
 
-  cursor: pointer;
-  z-index: 1000;
   /*border-radius: 50px;*/
   /*border: 2px solid black;*/
 }

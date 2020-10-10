@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Yeseva+One&display=swap");
 :root {
   /* CSS HEX */
-  --linen: #f6ece0ff;
-  --nickel: #72726eff;
-  --ou-crimson-red: #8b1c1aff;
-  --black: #000000ff;
-  --olive-drab-7: #43361aff;
+  --text-white: #f6ece0ff;
+  --text-grey: #72726eff;
+  --text-red: #8b1c1aff;
+  --text-brown: #43361aff;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  font-family: "Roboto";
 }
 
 * {

@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px), screen and (max-height: 500px) {
+@media screen and (max-width: 768px), screen and (max-height: 500px) {
   main {
     margin-bottom: 80px;
   }
@@ -40,9 +40,18 @@
   .synopsis {
     grid-area: synopsis;
   }
+  .synopsis > h6 {
+  }
+  .poster > h6 {
+    font-size: 3.5vw !important;
+  }
+
+  .synopsis > h3 {
+    font-size: 6vw !important;
+  }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   main {
     margin-left: 80px;
   }
@@ -62,11 +71,12 @@
   .info_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: min-content min-content min-content;
     gap: 0px 0px;
     grid-template-areas:
       "head_title head_title"
-      "poster synopsis";
+      "poster poster"
+      "synopsis synopsis";
     grid-area: info_grid;
   }
   .head_title {
@@ -78,22 +88,66 @@
   .synopsis {
     grid-area: synopsis;
   }
+  .synopsis > h6 {
+    visibility: hidden;
+  }
+
+  .synopsis > h3 {
+  }
 }
 
-.head_title {
-  margin: 25px;
+.head_title > h1 {
+  padding: 5px;
+  font-size: 6vw;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: capitalize;
   color: aliceblue;
+  background-color: var(--text-red);
   font-family: "Yeseva One", cursive;
-  font-size: 2em;
   letter-spacing: 5px;
+  max-width: 100vw;
 }
 
 .poster img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  max-height: 50vh;
+  max-height: 80vh;
   padding: 0px 10px 0px 10px;
+}
+
+.synopsis {
+  position: relative;
+}
+
+.poster > h6 {
+  padding: 10px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  color: aliceblue;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.5vw;
+  background-color: var(--text-grey);
+}
+
+.synopsis > h6 {
+  padding: 10px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  color: aliceblue;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.5vw;
+  background-color: var(--text-grey);
+  text-align: center;
+}
+
+.synopsis > h3 {
+  text-align: center;
+  padding: 10px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  color: black;
+  font-family: "Yeseva One", cursive;
+  font-size: 3vw;
+  background-color: var(--text-white);
 }

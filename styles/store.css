@@ -1,0 +1,56 @@
+@media screen and (max-width: 768px), screen and (max-height: 500px) {
+  main {
+    margin-bottom: 80px;
+  }
+  /*Mobile view*/
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 80px;
+  }
+  .shop-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+      "shop_head"
+      "shop";
+  }
+
+  .shop_head {
+    grid-area: shop_head;
+  }
+
+  .shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "tab1 tab2 tab3 tab4"
+      "content content content content";
+    grid-area: shop;
+  }
+
+  .page {
+    grid-area: content;
+  }
+
+  .tab1 {
+    grid-area: tab1;
+  }
+
+  .tab2 {
+    grid-area: tab2;
+  }
+
+  .tab3 {
+    grid-area: tab3;
+  }
+
+  .tab4 {
+    grid-area: tab4;
+  }
+}
