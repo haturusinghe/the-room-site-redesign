@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px), screen and (max-height: 500px) {
+@media screen and (max-width: 768px), screen and (max-height: 500px) {
   main {
     margin-bottom: 80px;
   }
@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   main {
     margin-left: 80px;
   }

@@ -2,7 +2,48 @@
   position: relative;
   z-index: 2;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-  transform: translateY(100%);
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    transform: translateY(50%);
+  }
+  .center-title {
+    font-size: 5em;
+    letter-spacing: 5px;
+  }
+  .pre-title {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .inner {
+    transform: translateY(0%) !important;
+  }
+  .center-title {
+    font-size: 5em;
+    letter-spacing: 5px;
+  }
+  .pre-title {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .inner {
+    transform: translateY(100%);
+  }
+  .center-title {
+    text-align: center;
+    color: aliceblue;
+    font-family: "Yeseva One", cursive;
+    font-size: 8em;
+    letter-spacing: 5px;
+  }
+  .pre-title {
+    font-size: 1em;
+  }
 }
 
 .side-title {
@@ -62,7 +103,6 @@
   text-align: center;
   color: aliceblue;
   font-family: "Yeseva One", cursive;
-  font-size: 8em;
   letter-spacing: 5px;
 }
 
@@ -70,6 +110,5 @@
   text-align: center;
   margin-bottom: 20px;
   font-family: "Yeseva One", cursive;
-  font-size: 1em;
   color: aliceblue;
 }

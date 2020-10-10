@@ -1,0 +1,99 @@
+@media screen and (max-width: 600px), screen and (max-height: 500px) {
+  main {
+    margin-bottom: 80px;
+  }
+  /*Mobile view*/
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+      "head_vid"
+      "info_grid";
+  }
+
+  .head_vid {
+    grid-area: head_vid;
+  }
+
+  .info_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+      "head_title"
+      "poster"
+      "synopsis";
+    grid-area: info_grid;
+  }
+
+  .head_title {
+    grid-area: head_title;
+  }
+
+  .poster {
+    grid-area: poster;
+  }
+
+  .synopsis {
+    grid-area: synopsis;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    margin-left: 80px;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+      "head_vid"
+      "info_grid";
+  }
+  .head_vid {
+    grid-area: head_vid;
+  }
+  .info_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "head_title head_title"
+      "poster synopsis";
+    grid-area: info_grid;
+  }
+  .head_title {
+    grid-area: head_title;
+  }
+  .poster {
+    grid-area: poster;
+  }
+  .synopsis {
+    grid-area: synopsis;
+  }
+}
+
+.head_title {
+  margin: 25px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: capitalize;
+  color: aliceblue;
+  font-family: "Yeseva One", cursive;
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+  max-height: 50vh;
+  padding: 0px 10px 0px 10px;
+}

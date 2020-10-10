@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px), screen and (max-height: 736px) {
+@media screen and (max-width: 768px), screen and (max-height: 736px) {
   /*mobile view*/
   .hero-title {
     font-size: 3em;
@@ -22,7 +22,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .hero-title {
     font-size: 6em;
   }
