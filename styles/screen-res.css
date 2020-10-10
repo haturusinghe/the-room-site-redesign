@@ -43,13 +43,14 @@
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
     gap: 0px 0px;
     grid-template-areas:
       "header header header"
-      "card1 card2 card3"
       "text-banner text-banner text-banner"
-      "table table table";
+      "table table card1"
+      "table table card2"
+      "table table card3";
   }
   .header {
     grid-area: header;
