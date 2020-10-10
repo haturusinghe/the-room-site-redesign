@@ -26,7 +26,7 @@
   .shop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 10vh 90vh;
     gap: 0px 0px;
     grid-template-areas:
       "tab1 tab2 tab3 tab4"
@@ -36,6 +36,7 @@
 
   .page {
     grid-area: content;
+    overflow: hidden;
   }
 
   .tab1 {
@@ -53,4 +54,61 @@
   .tab4 {
     grid-area: tab4;
   }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: 2px solid #8e44ad;
+  background: #ecf0f1;
+  padding-left: 0;
+}
+
+input[type="radio"]:checked + .page + label.nav {
+  background: #30a034;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+input[type="radio"]:checked + .page + label.nav span {
+  padding-left: 20px;
+}
+
+input[type="radio"]:checked + .page + label.nav svg {
+  opacity: 1;
+}
+
+label.nav span {
+  padding-left: 0px;
+  position: relative;
+}
+
+label.nav svg {
+  left: 0;
+  top: -3px;
+  position: absolute;
+  width: 15px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.page {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] + .page {
+  transform: translateX(1000%);
+}
+
+input[type="radio"]:checked + .page {
+  transform: translateX(0%);
 }
