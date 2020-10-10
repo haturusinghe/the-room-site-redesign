@@ -1,0 +1,132 @@
+@media screen and (max-width: 600px), screen and (max-height: 500px) {
+  main {
+    margin-bottom: 80px;
+  }
+  /*Mobile view*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header"
+      "card1"
+      "card2"
+      "card3"
+      "text-banner"
+      "table";
+  }
+  .header {
+    grid-area: header;
+  }
+  .card1 {
+    grid-area: card1;
+  }
+  .card2 {
+    grid-area: card2;
+  }
+  .card3 {
+    grid-area: card3;
+  }
+  .text-banner {
+    grid-area: text-banner;
+  }
+  .table {
+    grid-area: table;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    margin-left: 80px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header"
+      "card1 card2 card3"
+      "text-banner text-banner text-banner"
+      "table table table";
+  }
+  .header {
+    grid-area: header;
+  }
+  .card1 {
+    grid-area: card1;
+  }
+  .card2 {
+    grid-area: card2;
+  }
+  .card3 {
+    grid-area: card3;
+  }
+  .text-banner {
+    grid-area: text-banner;
+  }
+  .table {
+    grid-area: table;
+  }
+}
+
+.text-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -3;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -3;
+}
+
+/*screening schedule 1 record styling*/
+.record {
+  display: grid;
+  grid-template-columns: min-content min-content 1fr;
+  grid-template-rows: min-content min-content;
+  gap: 0px 0px;
+  grid-template-areas:
+    "month month month "
+    "day time venue ";
+}
+.bg-color {
+  margin: 10px;
+  color: aliceblue;
+  background-color: var(--nickel);
+}
+.record div {
+  display: flex;
+}
+.record div i {
+  display: flex;
+  padding-right: 10px;
+}
+.month {
+  grid-area: month;
+}
+.day {
+  padding: 10px;
+  grid-area: day;
+}
+.time {
+  padding: 10px;
+  grid-area: time;
+}
+.venue {
+  padding: 10px;
+  grid-area: venue;
+}
+.ticket {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  grid-area: ticket;
+}

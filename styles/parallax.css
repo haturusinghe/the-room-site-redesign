@@ -1,12 +1,26 @@
 .parallax {
   position: relative;
-  background-image: url("../img/bg-cover-1.jpg");
-  height: 105vh;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -4;
+}
+
+#sec-2 {
+  background-image: url("../img/bg-cover-1.jpg");
+  height: 105vh;
+}
+
+#screen-top {
+  background-image: url("../img/ScreeningsBanner.webp");
+  height: 50vh;
+}
+
+#text-banner {
+  background-image: url("../img/wp2261558-tommy-wiseau-wallpapers.jpg");
+  height: 15vh;
+  z-index: -2;
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -27,7 +41,7 @@
   z-index: -999;
 }
 
-.ParallaxVideo:before {
+.overlay:before {
   content: "";
   background: rgba(106, 98, 93, 0.35);
   position: absolute;
@@ -38,7 +52,7 @@
   z-index: 0;
 }
 
-.ParallaxVideo:after {
+.overlay:after {
   content: "";
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQYlWNgQID/MIZx5rX/WPhUVsRApKL/VFaEw434xQko+k9lRQwMDADYeETBkajnygAAAABJRU5ErkJggg==);
   position: absolute;

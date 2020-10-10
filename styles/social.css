@@ -1,0 +1,70 @@
+.social-grid {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  z-index: 1000;
+}
+
+.social-grid a {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px), screen and (min-height: 500px) {
+  .social-grid {
+    right: 20px;
+    bottom: 10px;
+  }
+
+  .social-grid a {
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 600px), screen and (max-height: 500px) {
+  .social-grid {
+    right: 20px;
+    bottom: 100px;
+  }
+
+  .social-grid a {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-imdb {
+  background: #f5c518;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
