@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/nav.css" />
-    <link rel="stylesheet" href="styles/intro.css" />
     <link rel="stylesheet" href="styles/social.css" />
-    <link rel="stylesheet" href="styles/text.css" />
-    <link rel="stylesheet" href="styles/card.css" />
-    <link rel="stylesheet" href="styles/parallax.css" />
     <link rel="stylesheet" href="styles/scroll-icon.css" />
-    <link rel="stylesheet" href="styles/title-card.css" />
+    <link rel="stylesheet" href="styles/shop-card.css" />
+
+    <link rel="stylesheet" href="styles/text.css" />
+    <link rel="stylesheet" href="styles/cast.css" />
+    <link rel="stylesheet" href="styles/parallax.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -75,49 +75,23 @@
       </ul>
     </nav>
 
-    <main style="overflow: hidden">
-      <div class="intro-grid">
-        <div class="head_vid ParallaxVideo overlay" id="sec-1">
-          <div class="inner">
-            <p class="pre-title">a film by TOMMY WIESEAU</p>
-            <h1 class="center-title">The Room</h1>
-          </div>
-          <video autoplay muted loop>
-            <source src="img/bg-vid.mp4"" type="video/mp4" id="videoBG"/>
-          </video>
-          <a href="#info">
+    <main>
+      <div class="grid-container">
+        <div class="header parallax overlay" id="cast-top">
+          <a href="#cast">
             <div class="scroll-down"></div>
           </a>
+          <h1 class="hero-title">The Room</h1>
+          <h3 class="hero-subtitle">Cast and Crew</h3>
+        </div>
+        <div class="text-banner parallax overlay" id="text-banner">
+          <h3 class="dashed-title hero-subtitle">Screenings Schedule</h3>
         </div>
 
-        <div class="info_grid" id="info">
-          <div class="img1"><img src="img/screen5.jpg" alt="" /></div>
-          <div class="img2"><img src="img/screen2.jpg" alt="" /></div>
-          <div class="img3"><img src="img/screen3.jpg" alt="" /></div>
-          <div class="img4"><img src="img/screen1.webp" alt="" /></div>
-          <div class="synopsis">
-            <div>
-              <h1>
-                <strong>We believe</strong>that the internet should be public,
-                open and accessible.
-              </h1>
-              <p>
-                Johnny is a successful banker with great respect for and
-                dedication to the people in his life, especially his future wife
-                Lisa. Johnny can also be a little too trusting at times, which
-                haunts him later. His beautiful blonde fiancee Lisa has always
-                gotten her way and will manipulate to get what she wants. She is
-                a taker, with a double personality, and her deadly schemes lead
-                to her own downfall. Mark is Johnny's successful, independent
-                best friend; he has a good heart, but he gets caught up in
-                Lisa's dangerous web and gives in to temptation. This eventually
-                brings him to great loss."The Room" depicts the depths of
-                friendship and relationships in life and raises life's real and
-                most-asked question:
-              </p>
-            </div>
-          </div>
-          <div class="poster" id=""><img src="img/poster.jpg" alt="" /></div>
+        <div class="poster_trailer parallax overlay-v2" id="cast">
+          <img src="img/cast1.jpg" alt="" class="cast-photo" />
+          <img src="img/cast1.jpg" alt="" class="cast-photo" />
+          <img src="img/cast1.jpg" alt="" class="cast-photo" />
         </div>
       </div>
     </main>
