@@ -1,0 +1,136 @@
+.box {
+  transition: box-shadow 0.3s;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+  position: relative;
+}
+.box:hover {
+  box-shadow: 0 2px 6px -4px rgba(0, 0, 0, 0.2),
+    0 8px 10px -4px rgba(0, 0, 0, 0.14), 0 8px 12px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #949494;
+}
+
+.box .stcard-header {
+}
+.stcard-header img {
+  width: 100%;
+}
+.stcard-details {
+  padding: 1.5em;
+}
+
+.tag span {
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: #f5f5f5;
+  background-color: var(--text-red);
+  border: 1px solid var(--text-red);
+  width: auto;
+  padding: 0.2em 0.2em;
+}
+
+.stcard-details .prod-title {
+  padding: 1em 0em;
+  font-weight: 300;
+}
+
+.pricing {
+  font-size: 18px;
+}
+
+.offer-price {
+  font-weight: bold;
+}
+.og-price {
+  font-size: 0.7em;
+  color: var(--text-red);
+  text-decoration: line-through;
+}
+.price-discount {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: var(--text-red);
+}
+
+.perk-shipping {
+  padding: 5% 0;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.perk-shipping-heading {
+  font-weight: bold;
+  width: 100%;
+  display: block;
+}
+
+.offer-claim {
+  font-size: 12px;
+}
+.offers-claimed {
+  font-weight: bold;
+}
+
+.shipping-locals {
+  padding: 2em 0 0 0;
+  font-size: 11px;
+}
+
+.offer-overview {
+  font-size: 11px;
+}
+
+.offer-overview ul {
+  padding-left: 25px;
+}
+
+.stcard-cta {
+  margin: 0.5em 0;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem 0.5rem;
+  text-align: center;
+  min-width: 112px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+  transition: all 0.1s cubic-bezier(0.16, 0.8, 0.45, 1);
+}
+
+.stcard-cta a {
+  color: var(--bg-primary);
+  font-size: 0.75em;
+  text-decoration: none !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.stcard-cta:hover > a {
+  color: var(--text-red) !important;
+}
+
+.box2 {
+  transition: box-shadow 0.3s;
+  width: 250px;
+  height: auto !important;
+  margin: 50px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+  position: relative;
+  opacity: 0.5;
+}
+#overlay {
+  opacity: 0.5;
+}
