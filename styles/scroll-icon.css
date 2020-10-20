@@ -5,9 +5,6 @@
   left: 50%;
   cursor: pointer !important;
   z-index: 5;
-
-  /*border-radius: 50px;*/
-  /*border: 2px solid black;*/
 }
 @media screen and (max-width: 768px) {
   .scroll-down {
@@ -42,7 +39,6 @@
 .scroll-down::before {
   top: 30%;
   animation-delay: 0.3s;
-  /* animation: scroll-down 1s ease-in-out infinite; */
 }
 
 @keyframes scroll-down {

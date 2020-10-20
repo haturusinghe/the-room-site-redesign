@@ -20,6 +20,7 @@
 }
 .stcard-header img {
   width: 100%;
+  height: auto;
 }
 .stcard-details {
   padding: 1.5em;

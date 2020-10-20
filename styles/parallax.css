@@ -11,6 +11,10 @@
   height: 100vh;
 }
 
+#cast-grid {
+  background-image: url("../img/bg-cover-2.jpg");
+}
+
 #cast {
   background-image: url("../img/cast-cover.jpg");
   height: 100vh;
@@ -41,6 +45,11 @@
   height: 100vh;
 }
 
+#contact-top {
+  background-image: url("../img/bg-cover-1.jpg");
+  height: 100vh;
+}
+
 #shop-top {
   background-image: url("../img/wp2261558-tommy-wiseau-wallpapers.jpg");
   height: 100vh;
@@ -49,6 +58,11 @@
 #cast-top {
   background-image: url("../img/bg-cover-3.jpg");
   height: 100vh;
+}
+
+#cast-banner {
+  background-image: url("../img/cast-cover.jpg");
+  height: 25vh;
 }
 
 #text-banner {
