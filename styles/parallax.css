@@ -65,6 +65,11 @@
   height: 25vh;
 }
 
+#reviews-banner {
+  background-image: url("../img/bg-cover-5.jpg");
+  height: 25vh;
+}
+
 #text-banner {
   background-image: url("../img/wp2261558-tommy-wiseau-wallpapers.jpg");
   height: 20vh;

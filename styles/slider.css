@@ -1,0 +1,131 @@
+.slides::-webkit-scrollbar {
+  display: none;
+  /*width: 10px;
+    height: 10px;*/
+} /*
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }*/
+
+.slider {
+  padding: 100px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px), screen and (max-height: 500px) {
+  .slider {
+    padding: 10px !important;
+  }
+}
+.slides {
+  display: flex;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  /*height: 75vh;*/
+  margin-right: 50px;
+  border-radius: 10px;
+  background: none;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slides > div:target {
+  /*   transform: scale(0.8); */
+}
+
+.slider > img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--text-red);
+  color: aliceblue;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+blockquote {
+  background: var(--bg-primary);
+  border-left: 10px solid var(--bg-secondary);
+  margin: 1.5em 10px;
+  padding: 50px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  content: close-quote;
+  color: #ccc;
+  visibility: visible;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  font-size: 2vw;
+  display: inline;
+  color: aliceblue;
+}
+.review-info {
+  color: aliceblue;
+}
+.review-info > .stars {
+  color: #f5c518;
+}
+@media screen and (max-width: 768px), screen and (max-height: 500px) {
+  blockquote p {
+    font-size: 5vw !important;
+  }
+}
