@@ -2,6 +2,19 @@
   background-color: var(--text-white);
 }
 
+.synopsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.synopsis > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 768px), screen and (max-height: 500px) {
   main {
     margin-bottom: 80px;
@@ -161,8 +174,10 @@ button {
   cursor: pointer;
   padding: 8px 12px;
   margin: 8px 0 0;
-  background: var(--text-grey);
+  background: aliceblue;
   color: var(--bg-primary);
+  font-family: "Roboto", Courier, monospace;
+  font-weight: bold;
   /*
   background: 0;
   transition: all 0.3s;*/
