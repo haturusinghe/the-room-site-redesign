@@ -5,70 +5,345 @@
   align-items: center;
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cast-grid {
+  padding: 10px;
+  background-image: repeating-linear-gradient(
+      0deg,
+      hsla(347, 0%, 33%, 0.05) 0px,
+      hsla(347, 0%, 33%, 0.05) 50px,
+      transparent 50px,
+      transparent 100px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(347, 0%, 33%, 0.05) 0px,
+      hsla(347, 0%, 33%, 0.05) 50px,
+      transparent 50px,
+      transparent 100px
+    ),
+    linear-gradient(90deg, hsl(139, 0%, 18%), hsl(139, 0%, 18%));
+}
+
+.actor-card {
+  border-radius: 2% 0 2% 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 85% 15%;
+  gap: 0px 0px;
+  grid-template-areas:
+    "actor_img"
+    "name";
+  border: 5px solid var(--text-grey);
+}
+.actor_img {
+  grid-area: actor_img;
+}
+
+.actor_img > img {
+  width: 100%;
+  height: 100%;
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: name;
+}
+
+.name > h6 {
+  font-family: "Yeseva One", cursive;
+  color: aliceblue;
+  font-size: 30px;
+  line-height: 1em;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px), screen and (max-height: 500px) {
+  .name > h6 {
+    font-size: 15px !important;
+  }
+}
+
 @media screen and (max-width: 768px), screen and (max-height: 500px) {
   main {
     margin-bottom: 80px;
   }
   /*Mobile view*/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100vh 25vh 25vh 25vh min-content 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header"
+      "director img1"
+      "img2 producer"
+      "writer img3"
+      "banner banner"
+      "cast-grid cast-grid";
+  }
+  .header {
+    grid-area: header;
+  }
+  .director {
+    grid-area: director;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .producer {
+    grid-area: producer;
+  }
+  .writer {
+    grid-area: writer;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .banner {
+    grid-area: banner;
+  }
+  .cast-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "cast1 cast2"
+      "cast3 cast4"
+      "cast5 cast6"
+      "cast7 cast8";
+    grid-area: cast-grid;
+  }
+  .cast1 {
+    grid-area: cast1;
+  }
+  .cast2 {
+    grid-area: cast2;
+  }
+  .cast3 {
+    grid-area: cast3;
+  }
+  .cast4 {
+    grid-area: cast4;
+  }
+  .cast5 {
+    grid-area: cast5;
+  }
+  .cast6 {
+    grid-area: cast6;
+  }
+  .cast7 {
+    grid-area: cast7;
+  }
+  .cast8 {
+    grid-area: cast8;
+  }
 }
 
 @media screen and (min-width: 768px) {
   main {
     margin-left: 80px;
   }
+
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100vh 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100vh 50vh 50vh min-content 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "cast_heading"
-      "poster_trailer";
+      "header header header"
+      "director img1 writer"
+      "img2 producer img3"
+      "banner banner banner"
+      "cast-grid cast-grid cast-grid";
   }
-  .poster_trailer {
+  .director {
+    grid-area: director;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .producer {
+    grid-area: producer;
+  }
+  .writer {
+    grid-area: writer;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .header {
+    grid-area: header;
+  }
+  .banner {
+    grid-area: banner;
+  }
+  .cast-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "details details";
-    grid-area: poster_trailer;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "cast1 cast2 cast3 cast4"
+      "cast5 cast6 cast7 cast8";
+    grid-area: cast-grid;
   }
-  .poster {
-    grid-area: poster;
+  .cast1 {
+    grid-area: cast1;
   }
-  .trailer {
-    grid-area: trailer;
-    background-color: black;
+  .cast2 {
+    grid-area: cast2;
   }
-  .details {
-    grid-area: details;
+  .cast3 {
+    grid-area: cast3;
   }
-
-  .heading {
-    grid-area: cast_heading;
+  .cast4 {
+    grid-area: cast4;
+  }
+  .cast5 {
+    grid-area: cast5;
+  }
+  .cast6 {
+    grid-area: cast6;
+  }
+  .cast7 {
+    grid-area: cast7;
+  }
+  .cast8 {
+    grid-area: cast8;
   }
 }
 
-.cast-photo {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  border: 5px solid white;
-}
-.crew {
-  max-height: fit-content;
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
+div[class*="img"] > img {
+  width: 100%;
+  height: 100%;
 }
 
-.poster_trailer {
+.director {
+  background-color: var(--text-grey);
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+}
+.producer {
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.writer {
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.crew span {
-  color: white;
-  font-family: "Roboto";
+.director > div {
+  margin-left: 50px;
+}
+.director > div > h1 {
+  font-family: "Yeseva One", cursive;
+  color: aliceblue;
+  font-size: 30px;
+  line-height: 1em;
+}
+
+.director > div > h1 strong {
+  color: var(--bg-secondary);
+  /*color: #a80c1e;*/
+  display: block;
+  font-size: 85px;
+  font-weight: normal;
+  letter-spacing: -3.5px;
+  line-height: 1em;
+}
+
+.producer > div {
+  margin-left: 50px;
+}
+.producer > div > h1 {
+  font-family: "Yeseva One", cursive;
+  color: aliceblue;
+  font-size: 30px;
+  line-height: 1em;
+}
+
+.producer > div > h1 strong {
+  color: var(--text-grey);
+  /*color: #a80c1e;*/
+  display: block;
+  font-size: 85px;
+  font-weight: normal;
+  letter-spacing: -3.5px;
+  line-height: 1em;
+}
+
+.writer > div {
+  margin-left: 50px;
+}
+.writer > div > h1 {
+  font-family: "Yeseva One", cursive;
+  color: aliceblue;
+  font-size: 30px;
+  line-height: 1em;
+}
+
+.writer > div > h1 strong {
+  color: #a80c1e;
+  display: block;
+  font-size: 85px;
+  font-weight: normal;
+  letter-spacing: -3.5px;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 768px), screen and (max-height: 570px) {
+  .director > div {
+    margin-left: 25px;
+  }
+  .director > div > h1 {
+    font-size: 15px !important;
+  }
+
+  .director > div > h1 strong {
+    font-size: 42.5px !important;
+  }
+
+  .producer > div {
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+  .producer > div > h1 {
+    font-size: 15px !important;
+  }
+
+  .producer > div > h1 strong {
+    font-size: 42.5px !important;
+  }
+
+  .writer > div {
+    margin-left: 25px;
+  }
+  .writer > div > h1 {
+    font-size: 15px;
+  }
+
+  .writer > div > h1 strong {
+    font-size: 42.5px;
+  }
 }
