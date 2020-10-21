@@ -116,10 +116,10 @@
       "director img1"
       "img2 producer"
       "writer img3"
-      "banner banner"
-      "cast-grid cast-grid"
       "review-banner review-banner"
-      "reviews reviews";
+      "reviews reviews"
+      "banner banner"
+      "cast-grid cast-grid";
   }
   .header {
     grid-area: header;
@@ -203,10 +203,10 @@
       "header header header"
       "director img1 writer"
       "img2 producer img3"
-      "banner banner banner"
-      "cast-grid cast-grid cast-grid"
       "review-banner review-banner review-banner"
-      "reviews reviews reviews";
+      "reviews reviews reviews"
+      "banner banner banner"
+      "cast-grid cast-grid cast-grid";
   }
   .director {
     grid-area: director;
