@@ -43,7 +43,11 @@
   padding: 1em 0em;
   font-weight: 300;
 }
-
+.prod-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
 .pricing {
   font-size: 18px;
 }
@@ -73,24 +77,9 @@
   display: block;
 }
 
-.offer-claim {
-  font-size: 12px;
-}
-.offers-claimed {
-  font-weight: bold;
-}
-
 .shipping-locals {
   padding: 2em 0 0 0;
   font-size: 11px;
-}
-
-.offer-overview {
-  font-size: 11px;
-}
-
-.offer-overview ul {
-  padding-left: 25px;
 }
 
 .stcard-cta {
@@ -101,7 +90,7 @@
   text-align: center;
   min-width: 112px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--bg-primary);
   border: 1px solid #c8c8c8;
   border-radius: 2px;
   transition: all 0.1s cubic-bezier(0.16, 0.8, 0.45, 1);
@@ -110,10 +99,12 @@
 .stcard-cta a {
   color: var(--bg-primary);
   font-size: 0.75em;
+  color: var(--text-white) !important;
   text-decoration: none !important;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: all 0.3s;
 }
 
 .stcard-cta:hover > a {
