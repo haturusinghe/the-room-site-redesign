@@ -56,11 +56,6 @@
   margin: 0 1.5rem;
 }
 
-.fa-primary,
-.fa-secondary {
-  transition: var(--transition-speed);
-}
-
 .logo {
   font-weight: bold;
   text-transform: capitalize;
@@ -89,7 +84,7 @@
   transform: rotate(-180deg);
 }
 
-/* Small screens */
+/* mobile screens */
 @media only screen and (max-width: 768px) {
   .navbar {
     bottom: 0;
@@ -111,7 +106,7 @@
   }
 }
 
-/* Large screens */
+/* pc screens */
 @media only screen and (min-width: 768px) {
   .navbar {
     top: 0;

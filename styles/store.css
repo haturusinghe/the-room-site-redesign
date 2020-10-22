@@ -140,15 +140,6 @@
   }
 }
 
-/*div[class*="item"] {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "itm_img itm_img"
-    "itm_name price";
-}*/
 .itm_img {
   grid-area: itm_img;
 }
@@ -194,7 +185,6 @@ input[type="radio"] {
   justify-content: left;
   background: var(--text-grey);
   color: aliceblue;
-  /*border-right: 2px solid var(--bg-secondary);*/
 }
 
 .tabtitle > h1 {
@@ -220,15 +210,6 @@ input[type="radio"] {
   padding-left: 5px;
   border-bottom: 2px solid aliceblue;
   color: aliceblue;
-  /*
-  width: 60px;
-  height: 60px;
-  box-sizing: border-box;
-  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
-    padding 0.2s;
-  transition-delay: 0.4s;
-  color: white;
-  font-size: 20px;*/
 }
 .tabtitle > .searchbox > input::placeholder {
   color: aliceblue;

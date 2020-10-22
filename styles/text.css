@@ -131,59 +131,6 @@
   }
 }
 
-.side-title {
-  position: absolute;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-  top: 100px;
-  left: 100px;
-  padding: 20px;
-  text-align: center;
-  text-transform: capitalize;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAEklEQVQYlWNgoBL4T7GCoW8FAGEXBfvNSmHvAAAAAElFTkSuQmCC);
-  color: aliceblue;
-  font-family: "Yeseva One", cursive;
-  font-size: 4em;
-  letter-spacing: 5px;
-}
-
-.title-2 {
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-  text-align: right;
-  text-transform: capitalize;
-  margin-right: 100px;
-  /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAEklEQVQYlWNgoBL4T7GCoW8FAGEXBfvNSmHvAAAAAElFTkSuQmCC);
-  */
-  color: aliceblue;
-  font-family: "Yeseva One", cursive;
-  font-size: 5em;
-  letter-spacing: 5px;
-}
-
-.title-3 {
-  margin-right: 100px;
-  text-align: right;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-
-  text-transform: capitalize;
-  /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAEklEQVQYlWNgoBL4T7GCoW8FAGEXBfvNSmHvAAAAAElFTkSuQmCC);
-  */
-  color: aliceblue;
-  font-family: "Yeseva One", cursive;
-  font-size: 2em;
-}
-.details {
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 200px;
-  left: 100px;
-  padding: 20px;
-  margin-right: 100px;
-  text-align: left;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAEklEQVQYlWNgoBL4T7GCoW8FAGEXBfvNSmHvAAAAAElFTkSuQmCC);
-  color: aliceblue;
-  font-family: "Roboto", cursive;
-  font-size: 1em;
-}
 .center-title {
   text-align: center;
   color: aliceblue;
