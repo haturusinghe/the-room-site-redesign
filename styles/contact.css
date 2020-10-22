@@ -128,7 +128,7 @@ div[class*="team_img"] > img {
 
 .sub_msg > p {
   color: aliceblue;
-  text-align: left;
+  text-align: center;
 
   padding: 25px;
 }

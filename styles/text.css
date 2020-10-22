@@ -29,7 +29,7 @@
   }
 
   .hero-subtitle {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .dashed-title {
@@ -56,7 +56,7 @@
 .hero-subtitle {
   text-align: center;
   color: aliceblue;
-  font-family: "Roboto", cursive;
+  font-family: "Poppins", cursive;
   letter-spacing: 5px;
   z-index: 1;
 }

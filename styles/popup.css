@@ -16,7 +16,7 @@
 
 .modal {
   background-color: none;
-  width: fit-content;
+  width: 600px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
