@@ -2,12 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
   /* CSS HEX */
-  --text-white: #f6ece0ff;
-  --text-grey: #72726eff;
-  --text-red: #8b1c1aff;
-  --text-brown: #43361aff;
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
+  --text-white: #f1e9de;
+  --text-grey: #8d8a84;
+  --text-red: #7f2923;
+  --text-brown: #ab945e;
+  --bg-primary: #23232e;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
   font-family: "Poppins", sans-serif;
